@@ -7,7 +7,6 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import EventsPanel from '../components/EventsPanel';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -108,7 +107,7 @@ export default function FullWidthTabs() {
                 onChangeIndex={handleChangeIndex}
             >
                 <TabPanel className={classes.tabPanel} value={value} index={0} dir={theme.direction}>
-                    <EventsPanel />
+                    Item One
                 </TabPanel>
                 <TabPanel value={value} index={1} dir={theme.direction}>
                     Item Two
